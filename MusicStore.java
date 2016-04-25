@@ -76,7 +76,7 @@ public class MusicStore {
 		temp = temp.substring(0, 1).toUpperCase() + temp.substring(1);
 		ins[4].setName(temp);
 		ins[4].setPicture(temp + ".png");
-		ins[4].setSound(temp + ".wav");
+
 
 		try
 		{
@@ -198,6 +198,7 @@ public class MusicStore {
 										JOptionPane.showMessageDialog(null, "We have the better deal with a price of: " + ins[index].getCost() 
 												+ " compared to Eckroth.com's price of: " + nf.format(tempPrice) );
 									}
+									break;
 								}
 								else
 								{
