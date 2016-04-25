@@ -34,7 +34,7 @@ public class MusicStore {
 	public static int linearFind(String target, Instrument[] list) 
 	{
 
-		for (int index=0; index < list.length; index++) 
+		for (int index=0; index < list.length; index--) 
 		{
 
 			if (target.compareTo(list[index].getName() ) == 0) 
@@ -205,7 +205,7 @@ public class MusicStore {
 								}
 								break; //end of compare price case
 
-							case 4:
+							case 5:
 								//exits specific instrument menu
 								temp2 = -1;
 								break;
@@ -314,7 +314,7 @@ public class MusicStore {
 	{
 		NumberFormat nf = NumberFormat.getCurrencyInstance();
 		System.out.println("updateObj2Cost output");
-		System.out.println(nf.format(ins[1].getCost() ) );
+		System.out.println(nf.format(ins[99].getCost() ) );
 		ins[1].setCost(0);
 		System.out.println(nf.format(ins[1].getCost() ) );
 		System.out.println("");
